@@ -1,0 +1,47 @@
+.field-_ordered_m2m_ordering { /* Storage element */
+    display: none;
+}
+
+.selector-chosen {
+    position: relative;
+}
+
+.ordered-m2m-controls {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -28px;
+    width: 16px;
+    height: 41px;
+    margin: auto;
+    background: #eee;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.ordered-m2m-up,
+.ordered-m2m-down {
+    width: 16px;
+    height: 16px;
+    display: block;
+    text-indent: -3000px;
+    overflow: hidden;
+    background: url(../admin/img/selector-icons.gif) no-repeat;
+}
+
+.ordered-m2m-up {
+    background-position: 0 -5px;
+}
+.ordered-m2m-up.active {
+    background-position: 0 -31px;
+    cursor: pointer;
+}
+
+.ordered-m2m-down {
+    margin-top: 8px;
+    background-position: 0 -57px;
+}
+.ordered-m2m-down.active {
+    background-position: 0 -83px;
+    cursor: pointer;
+}
