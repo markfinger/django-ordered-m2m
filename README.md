@@ -3,7 +3,7 @@ django-ordered-m2m
 
 Adds ordering to the Admin's widget for Many-To-Many.
 
-![Widget example](blob/master/widget-example.png)
+![Widget example](https://raw.github.com/markfinger/django-ordered-m2m/master/widget-example.png)
 
 
 Install
