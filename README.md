@@ -1,7 +1,7 @@
 django-ordered-m2m
 ==================
 
-Adds ordering to Django's Many-To-Many relations.
+Adds ordering to Django's many-to-many relations.
 
 ![Widget example](https://raw.github.com/markfinger/django-ordered-m2m/master/widget-example.png)
 
@@ -34,7 +34,6 @@ admin.site.register(Article, ArticleAdmin)
 
 
 # Template
-
 {% for category in article.categories_ordered %}
     {{ category }}
 {% endfor %}
