@@ -10,7 +10,7 @@ Full documentation at http://github.com/markfinger/assembla
 
 setup(
     name = 'django-ordered-m2m',
-    version = '1.0.0',
+    version = '1.0.1',
     packages = find_packages(),
     package_data = {'ordered_m2m': []},
     entry_points = {},

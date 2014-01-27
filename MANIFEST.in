@@ -1,2 +1,4 @@
 include README.md
 include LICENSE.txt
+include widget-example.png
+recursive-include ordered_m2m/static/ordered_m2m *
