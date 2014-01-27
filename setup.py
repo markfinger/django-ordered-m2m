@@ -27,7 +27,7 @@ setup(
     classifiers = [
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
-        'Framework :: Django'
+        'Framework :: Django',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'License :: OSI Approved :: MIT License',
