@@ -1,4 +1,5 @@
-.field-_ordered_m2m_ordering { /* Storage element */
+/* JSON storage element */
+.field-_ordered_m2m_ordering {
     display: none;
 }
 
@@ -26,7 +27,7 @@
     display: block;
     text-indent: -3000px;
     overflow: hidden;
-    background: url(../admin/img/selector-icons.gif) no-repeat;
+    background: url("../admin/img/selector-icons.gif") no-repeat;
 }
 
 .ordered-m2m-up {

@@ -7,12 +7,10 @@ class OrderedManyToManyField(models.ManyToManyField):
     def contribute_to_class(self, cls, name):
         super(OrderedManyToManyField, self).contribute_to_class(cls, name)
 
-        def get_ordered(attr_name):
-            def ordered(model_instance):
-                return model_instance._get_ordered_m2m_for(attr_name)
-            return ordered
+        def ordered(self):
+            return self._get_ordered_m2m_for(name)
 
-        setattr(cls, name + '_ordered', get_ordered(name))
+        setattr(cls, name + '_ordered', ordered)
 
 
 # Copied the ManyToManyField rules out of South's codebase

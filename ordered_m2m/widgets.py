@@ -34,8 +34,11 @@ class OrderedFilteredSelectMultiple(FilteredSelectMultiple):
             })(orderedFilteredSelectMultiple);
         </script>
         ''' % (
+            # JSON dump element's ID
             WIDGET_STORAGE_ID,
+            # Element ID
             kwargs['attrs']['id'] + '_filter',
+            # Field name
             kwargs['attrs']['id'].strip('id_'),
         )
 
