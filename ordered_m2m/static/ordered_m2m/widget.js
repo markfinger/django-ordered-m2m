@@ -56,6 +56,8 @@
     var remove;
     var up;
     var down;
+    var chooseAll;
+    var removeAll;
     var id = obj.id;
     var field = obj.field;
 
@@ -152,11 +154,18 @@
     };
 
     var setBindings = function() {
+      // Ordering UI
       up.on('click', moveUp);
       down.on('click', moveDown);
+
+      // Update the `active` state of the ordering buttons
+      select.on('change', checkButtons);
+
+      // Update when the filtered-m2m buttons are clicked
       add.on('click', saveOrder);
       remove.on('click', saveOrder);
-      select.on('change', checkButtons);
+      chooseAll.on('click', saveOrder);
+      removeAll.on('click', saveOrder);
     };
 
     var init = function() {
@@ -165,6 +174,8 @@
       select = container.find('select');
       add = parent.find('.selector-add');
       remove = parent.find('.selector-remove');
+      chooseAll = parent.find('.selector-chooseall');
+      removeAll = parent.find('.selector-clearall');
 
       insertUI();
       setBindings();
