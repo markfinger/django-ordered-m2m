@@ -10,9 +10,13 @@ Full documentation at http://github.com/markfinger/assembla
 
 setup(
     name = 'django-ordered-m2m',
-    version = '1.0.1',
+    version = '1.0.2',
     packages = find_packages(),
-    package_data = {'ordered_m2m': []},
+    package_data={
+        'ordered_m2m': [
+            'static/ordered_m2m/*.*',
+        ],
+    },
     entry_points = {},
 
     # metadata for upload to PyPI
