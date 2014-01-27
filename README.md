@@ -42,19 +42,26 @@ admin.site.register(Article, ArticleAdmin)
 
 `ordered_m2m.fields.OrderedManyToManyField`
 -------------------------------------------
-Super-sets of `ManyToManyField`, the primary difference is that they dynamically contribute
-an extra method to the class which allows you to receive the relations in the order specified
-by the admin's widget. For example: if your field was named `categories`, the ordered set of
-relations will be named `categories_ordered`. The extra method returns the relations in a
-standard Python List.
+Dynamically contributes a extra method to the parent class which allows you to receive the relations 
+in the order specified by the admin's widget.
+
+For example: if your field was named `categories`, the ordered set of relations will be named
+`categories_ordered`.
+
+`*_ordered` returns the relations in a standard Python List.
+
+Inherits from `django.db.models.ManyToManyField`.
 
 
 `ordered_m2m.models.OrderedM2M`
 -------------------------------
-Provides an extra field, `_ordered_m2m_ordering` which is used by each of the widgets to store
-their ordering.
+Provides an extra TextField, `_ordered_m2m_ordering`, which is used by each of the widgets to store their ordering.
+
+Inherits from `django.db.models.Model`.
 
 
 `ordered_m2m.admin.OrderedM2MAdmin`
 -----------------------------------
-handles the legwork for setting up the widgets.
+Handles the legwork of setting up the widgets.
+
+Inherits from `django.contrib.admin.ModelAdmin`.
