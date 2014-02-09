@@ -5,7 +5,7 @@ PYPI_RESTRUCTURED_TEXT_INFO = \
 """
 Adds ordering to Django's many-to-many relations.
 
-Full documentation at http://github.com/markfinger/assembla
+Full documentation at http://github.com/markfinger/django-ordered-m2m
 """
 
 setup(
