@@ -17,6 +17,9 @@ setup(
             'static/ordered_m2m/*.*',
         ],
     },
+    install_requires = [
+        'simplejson',
+    ],
     entry_points = {},
 
     # metadata for upload to PyPI
