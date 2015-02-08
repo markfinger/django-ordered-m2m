@@ -1,3 +1,5 @@
+Note: this project is no longer maintained
+
 django-ordered-m2m
 ==================
 
