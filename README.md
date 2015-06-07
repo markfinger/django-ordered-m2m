@@ -1,4 +1,7 @@
-Note: this project is no longer maintained
+Note: this project is no longer maintained.
+
+If anyone knows of any packages which have superseded this, please open a ticket and I'll add them to 
+the project's README.
 
 django-ordered-m2m
 ==================
