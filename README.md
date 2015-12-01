@@ -1,7 +1,7 @@
-Note: this project is no longer maintained.
+Note: this project is no longer maintained. 
 
-If anyone knows of any packages which have superseded this, please open a ticket and I'll add them to 
-the project's README.
+You should probably try using https://github.com/gregmuellegger/django-sortedm2m instead. If anyone knows 
+of any packages which have superseded this, feel free to open a ticket.
 
 django-ordered-m2m
 ==================
